@@ -56,11 +56,10 @@ console.log(results);
 // [false, true]
 
 // Task 6: Reducing with reduce()
-let totalBudget = 500;
 let prices = [50, 40, 60, 100];
 let remainingBudget = prices.reduce(
   (budget, currentPrice) => budget - currentPrice,
-  totalBudget,
+  500,
 );
 console.log(`remainingBudget: $${remainingBudget}`);
 // remainingBudget: $250
