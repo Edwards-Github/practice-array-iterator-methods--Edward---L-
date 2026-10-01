@@ -33,17 +33,13 @@ let favoriteFood = [
   "steak",
   "geoduck",
 ];
-let foodWithMoreThanFourLetters = favoriteFood.filter(
+let foodWithMoreThanFourLetters = favoriteFood.find((food) => food.length > 4);
+
+let indexOfFirstFoodWithMoreThanFourLetters = favoriteFood.findIndex(
   (food) => food.length > 4,
 );
-let firstFoodWithMoreThanFourLetters = favoriteFood.find(
-  (food) => food === foodWithMoreThanFourLetters[0],
-);
-let indexOfFirstFoodWithMoreThanFourLetters = favoriteFood.findIndex(
-  (food) => food === foodWithMoreThanFourLetters[0],
-);
 console.log(
-  `first food with more than four letters: ${firstFoodWithMoreThanFourLetters}`,
+  `first food with more than four letters: ${foodWithMoreThanFourLetters}`,
 );
 console.log(
   `index of first food with more than four letters: ${indexOfFirstFoodWithMoreThanFourLetters}`,
